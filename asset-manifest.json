@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/BestLifeFitness/static/css/main.91589023.css",
+    "main.js": "/BestLifeFitness/static/js/main.c08d6559.js",
+    "static/media/banner.png": "/BestLifeFitness/static/media/banner.fa20fe2cfd5cbcc4ee44.png",
+    "static/media/service.png": "/BestLifeFitness/static/media/service.887ef28b0bb6ed5bcaa9.png",
+    "static/media/Recommended3.png": "/BestLifeFitness/static/media/Recommended3.5d893075b89d6f17ef6c.png",
+    "static/media/Recommended1.png": "/BestLifeFitness/static/media/Recommended1.015082c21d7995fe8454.png",
+    "static/media/Recommended2.png": "/BestLifeFitness/static/media/Recommended2.ce6a2314faa209a0d1df.png",
+    "static/media/senior-fitness-training-stockcake.png": "/BestLifeFitness/static/media/senior-fitness-training-stockcake.e9c41f788ed51e4a0a10.png",
+    "static/media/trainer.jpg": "/BestLifeFitness/static/media/trainer.261034871b50d6623eb3.jpg",
+    "static/media/founder.jpg": "/BestLifeFitness/static/media/founder.ce86c4642b53a9afff23.jpg",
+    "index.html": "/BestLifeFitness/index.html",
+    "main.91589023.css.map": "/BestLifeFitness/static/css/main.91589023.css.map",
+    "main.c08d6559.js.map": "/BestLifeFitness/static/js/main.c08d6559.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.91589023.css",
+    "static/js/main.c08d6559.js"
+  ]
+}
