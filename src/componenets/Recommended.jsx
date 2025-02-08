@@ -88,7 +88,7 @@ function Recommended() {
                 maxWidth:'310px',
              
               }}
-              variant="body2"
+              variant="body1"
               component="div"
             >
               {service.title}

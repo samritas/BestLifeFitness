@@ -45,12 +45,12 @@ const Access = () => {
 
         <Paper sx={{ p: 2, boxShadow: 3 }}>
           <Typography variant="subtitle1" sx={{ fontWeight: 'bold', color: '#E37503' }}>住所</Typography>
-          <Typography variant="body2" sx={{ color: '#E37503' }}>千葉県流山市おおたかの森4-2-2 グリーンワーク流山おおたかの森</Typography>
+          <Typography variant="body1" sx={{ color: '#E37503' }}> 千葉県市川市南八幡4-4-22 グリーンターフ南八幡1階</Typography>
         </Paper>
 
         <Paper sx={{ p: 2, boxShadow: 3 }}>
           <Typography variant="subtitle1" sx={{ fontWeight: 'bold', color: '#E37503' }}>最寄駅</Typography>
-          <Typography variant="body2" sx={{ color: '#E37503' }}>流山おおたかの森駅 徒歩2分</Typography>
+          <Typography variant="body1" sx={{ color: '#E37503' }}>本八幡駅 – 徒歩2分</Typography>
         </Paper>
 
         <Paper sx={{ p: 2, boxShadow: 3 }}>

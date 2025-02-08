@@ -13,11 +13,11 @@ export default function Footer() {
           <Typography variant="h6">電話 / メールアドレス</Typography>
           <Box display="flex" alignItems="center" mt={1}>
             <PhoneIcon sx={{ mr: 1 }} />
-            <Typography variant="body2">080-7998-3831</Typography>
+            <Typography variant="body1">080-7998-3831</Typography>
           </Box>
           <Box display="flex" alignItems="center" mt={1}>
             <EmailIcon sx={{ mr: 1 }} />
-            <Typography variant="body2">info@bestlifefitness.jp
+            <Typography variant="body1">info@bestlifefitness.jp
             </Typography>
           </Box>
         </Grid>

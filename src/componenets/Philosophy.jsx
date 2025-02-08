@@ -1,12 +1,12 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
 import { styled } from '@mui/system';
-import service from '../assets/senior-fitness-training-stockcake.png';
+import service from '../assets/philosophy.jpg'
 
 const RoundedImage = styled('img')({
-    width: '320px', 
-    maxWidth: '300px',
-    height: '300px', 
+    width: '350px', 
+    maxWidth: '350px',
+    height: '290px', 
     borderRadius: '5%', 
 });
 
@@ -53,7 +53,7 @@ const Philosophy = () => {
                     企業理念
                 </Typography>
                 <Typography
-                    variant="body2"
+                    variant="body1"
                     sx={{ color: '#E87F11', lineHeight: 1.6 }}
                 >
                     50代・60代・70代でも健康でいるために
@@ -78,7 +78,7 @@ const Philosophy = () => {
                
             >
                 <Typography
-                      variant="body2"
+                      variant="body1"
                     sx={{
                         color: '#E87F11',
                         marginBottom: 1,
@@ -88,7 +88,7 @@ const Philosophy = () => {
                    <br />無理なく始めて、続けられる運動習慣を
                 </Typography>
                 <Typography
-                    variant="body2"
+                    variant="body1"
                     sx={{ color: '#E87F11', lineHeight: 1.6 }}
                 >
                     「もう歳だから無理だろう…」と思われるかもしれませんが、今からでも遅くありません。ベストライフフィットネスでは、50代から70代の方でも安心して取り組める運動プログラムを提案し、お客様一人ひとりに寄り添ったサポートを行っています。

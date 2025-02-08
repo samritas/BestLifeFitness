@@ -2,7 +2,8 @@ import React from "react";
 import { Box, Container, Typography, Button } from "@mui/material";
 import banner from "../assets/banner.png";
 import { TypeAnimation } from "react-type-animation";
-import Navbar from "./Navbar"; // Import the Navbar
+import Navbar from "./Navbar"; 
+import { Link } from "react-scroll";
 
 function Home() {
   return (
@@ -16,7 +17,7 @@ function Home() {
         overflow: "hidden",
       }}
     >
-      {/* Overlay */}
+      
       <Box
         sx={{
           position: "absolute",
@@ -28,10 +29,10 @@ function Home() {
         }}
       />
 
-      {/* Navbar */}
+      
       <Navbar />
 
-      {/* Hero Section */}
+     
       <Box
         sx={{
           height: "100%",
@@ -53,7 +54,12 @@ function Home() {
                 repeat={0}
               />
             </Typography>
-            <Button
+            <Link  
+                  to='counseling'
+                  smooth={true}
+                  duration={500}
+                  style={{ textDecoration: "none", cursor: "pointer" }}>
+                     <Button
               sx={{
                 backgroundColor: "#E37503",
                 color: "white",
@@ -64,6 +70,8 @@ function Home() {
             >
               無料カウンセリングを予約する
             </Button>
+                  </Link>
+           
           </Box>
         </Container>
       </Box>

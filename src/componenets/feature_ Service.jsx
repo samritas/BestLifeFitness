@@ -3,8 +3,8 @@ import { Box, Typography } from '@mui/material';
 import { styled } from '@mui/system';
 import service from '../assets/service.png';
 const RoundedImage = styled('img')({
-    width: '400px',
-    height: '200px', 
+    width: '500px',
+    height: '250px', 
     borderRadius: '5%', 
 });
 
@@ -14,7 +14,7 @@ const Service = () => {
         sx={{   padding: 5 ,
             display: 'flex',
             flexDirection: { xs: 'column', md: 'row' },
-            gap: 4, 
+            gap: 2, 
             justifyContent: 'center',
             alignItems: 'center', 
           
@@ -28,7 +28,7 @@ const Service = () => {
                 flexDirection="column" 
                 justifyContent="center" 
                 alignItems="flex-start" 
-                padding={2} 
+                padding={1} 
              
             >
                 <Typography 
@@ -42,7 +42,7 @@ const Service = () => {
                    パーソナルジムとは
                 </Typography>
                 <Typography 
-                    variant="body2" 
+                    variant="body1" 
                     sx={{  color: '#E87F11' }} 
                 >
                  パーソナルジムは、完全予約制でトレーナーがマンツーマンでサポートするジムです。一人ひとりの目標や体力に合わせて、オーダーメイドのトレーニングプランを提供します。
