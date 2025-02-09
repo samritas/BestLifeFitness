@@ -91,8 +91,8 @@ const Philosophy = () => {
                 <Typography
                     variant="body1"
                     sx={{ color: '#E87F11', lineHeight: 1.6 ,marginTop: 3,fontSize: {
-                        xs: '1.75rem',
-                        md: '2rem',
+                        xs: '1rem',
+                        md: '1.25rem',
                       },}}
                 >
                     「もう歳だから無理だろう…」と思われるかもしれませんが、今からでも遅くありません。ベストライフフィットネスでは、50代から70代の方でも安心して取り組める運動プログラムを提案し、お客様一人ひとりに寄り添ったサポートを行っています。
