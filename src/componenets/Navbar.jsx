@@ -63,6 +63,7 @@ function Navbar() {
               sx={{
                 display: { xs: "none", md: "flex" },
                 gap: 2,
+                fontSize: { xs: '1rem', md: '1.25rem' }
               }}
             >
               {navItems.map((item) => (
@@ -71,7 +72,8 @@ function Navbar() {
                   to={item.id}
                   smooth={true}
                   duration={500}
-                  style={{ textDecoration: "none", cursor: "pointer" }}
+                  style={{ textDecoration: "none", cursor: "pointer", }}
+                  
                 >
                   <Button
                     sx={{

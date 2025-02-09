@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, Card, CardContent } from "@mui/material";
+import { Box, Typography, Card, CardContent, Divider } from "@mui/material";
 
 const Pricing = () => {
   const plans = [
@@ -53,7 +53,8 @@ const Pricing = () => {
           fontWeight: "bold",
           color: "#E37503",
           textAlign: "center",
-          mb: 2,
+          mb: 0,
+          fontSize: { xs: "1.5rem", md: "2.5rem" },
         }}
       >
         料金
@@ -81,7 +82,14 @@ const Pricing = () => {
               gap: 2,
             }}
           >
-            <Typography variant="h5" sx={{ fontWeight: "bold", color: "#E37503" }}>
+            <Typography
+              variant="h5"
+              sx={{
+                fontWeight: "bold",
+                color: "#E37503",
+                fontSize: { xs: "1.25rem", md: "2rem" },
+              }}
+            >
               {group.title}
             </Typography>
 
@@ -90,6 +98,7 @@ const Pricing = () => {
                 display: "flex",
                 flexDirection: { xs: "column", sm: "row" },
                 gap: 3,
+                color: "#E37503",
                 alignItems: "center",
               }}
             >
@@ -98,8 +107,8 @@ const Pricing = () => {
                   key={idx}
                   elevation={6}
                   sx={{
-                    width: { xs: "90%", sm: 280 },
-                    height: 200,
+                    width: { xs: "100%", sm: 350 }, // Increased width on small screens
+                    height: { xs: 240, sm: 200 }, // Increased height on small screens
                     borderRadius: 2,
                     background: "#FFF",
                     boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
@@ -128,38 +137,52 @@ const Pricing = () => {
                           fontWeight: "bold",
                           borderRadius: "4px 4px 0 0",
                           mb: 1,
+                          fontSize: { xs: "0.75rem", md: "1rem" },
                         }}
                         variant="caption"
                       >
                         オススメ
                       </Typography>
                     )}
-                    <Typography variant="body1" sx={{ fontWeight: "bold" }}>
+                    <Typography
+                      variant="body1"
+                      sx={{ fontWeight: "bold", fontSize: { xs: "1rem", md: "1.5rem" } }}
+                    >
                       {plan.label}
                     </Typography>
-                    <Typography variant="h4" sx={{ fontWeight: "bold", color: "#E37503" }}>
+                    <Typography
+                      variant="h4"
+                      sx={{
+                        fontWeight: "bold",
+                        color: "#E37503",
+                        fontSize: { xs: "1.75rem", md: "2.5rem" },
+                      }}
+                    >
                       {plan.price}
                     </Typography>
-                    <Typography variant="body1" sx={{ color: "black" }}>
+                    <Typography
+                      variant="body1"
+                      sx={{  color: "#E37503", fontSize: { xs: "1rem", md: "1.5rem" } }}
+                    >
                       {plan.details}
                     </Typography>
                   </CardContent>
                 </Card>
               ))}
-                <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
-              {benefits.map((text, idx) => (
-                <Box key={idx} sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-                  <Box sx={{ width: 12, height: 12, backgroundColor: "#E37503", borderRadius: "2px" }} />
-                  <Typography variant="body1" sx={{ fontWeight: "bold", color: "#E37503" }}>
-                    {text}
-                  </Typography>
-                </Box>
-              ))}
+              <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
+                {benefits.map((text, idx) => (
+                  <Box key={idx} sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+                    <Box sx={{ width: 12, height: 12, backgroundColor: "#E37503", borderRadius: "2px" }} />
+                    <Typography
+                      variant="body1"
+                      sx={{ fontWeight: "bold", color: "#E37503", fontSize: { xs: "1rem", md: "1.5rem" } }}
+                    >
+                      {text}
+                    </Typography>
+                  </Box>
+                ))}
+              </Box>
             </Box>
-            </Box>
-
-           
-          
           </Box>
         ))}
       </Box>
@@ -176,8 +199,8 @@ const Pricing = () => {
         <Card
           elevation={6}
           sx={{
-            width: { xs: "90%", sm: 280 },
-            height: 200,
+            width: { xs: "100%", sm: 320 }, // Increased width on small screens
+            height: { xs: 360, sm: 360 }, // Adjusted height on small screens
             borderRadius: 2,
             background: "#FFF",
             boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
@@ -186,59 +209,50 @@ const Pricing = () => {
             justifyContent: "center",
           }}
         >
-          <CardContent
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center",
-              textAlign: "center",
-              width: "100%",
-              padding: 2,
-            }}
-          >
-            <Typography variant="body1" sx={{ fontWeight: "bold", color: "#E37503" }}>
+          <CardContent sx={{ textAlign: "center" }}>
+            <Typography
+              variant="body1"
+              sx={{ fontWeight: "bold", color: "#E37503", fontSize: { xs: "1rem", md: "1.5rem" } }}
+            >
               その他サービス
             </Typography>
           </CardContent>
         </Card>
 
-        {additionalPlans.map((plan, idx) => (
-          <Card
-            key={idx}
-            elevation={6}
-            sx={{
-              width: { xs: "90%", sm: 280 },
-              height: 200,
-              borderRadius: 2,
-              background: "#FFF",
-              boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
-              position: "relative",
-            }}
-          >
-            <CardContent
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "center",
-                flexGrow: 1,
-                color: "#E37503",
-                gap: 1,
-              }}
-            >
-              <Typography variant="body1" sx={{ fontWeight: "bold" }}>
-                {plan.label}
-              </Typography>
-              <Typography variant="h4" sx={{ fontWeight: "bold", color: "#E37503" }}>
-                {plan.price}
-              </Typography>
-              <Typography variant="body1" sx={{ color: "black" }}>
-                {plan.details}
-              </Typography>
-            </CardContent>
-          </Card>
-        ))}
+        <Card
+          elevation={6}
+          sx={{
+            width: { xs: "100%", sm: 320 }, // Increased width on small screens
+            borderRadius: 2,
+            background: "#FFF",
+            boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
+          }}
+        >
+          <CardContent sx={{ textAlign: "center", gap: 2 }}>
+            {additionalPlans.map((plan, idx) => (
+              <React.Fragment key={idx}>
+                <Box sx={{ color: "#E37503" }}>
+                  <Typography
+                    variant="body1"
+                    sx={{ fontWeight: "bold", fontSize: { xs: "1rem", md: "1.5rem" } }}
+                  >
+                    {plan.label}
+                  </Typography>
+                  <Typography
+                    variant="h4"
+                    sx={{ fontWeight: "bold", color: "#E37503", fontSize: { xs: "1.75rem", md: "2.5rem" } }}
+                  >
+                    {plan.price}
+                  </Typography>
+                  <Typography variant="body1" sx={{ color: "#E37503", fontSize: { xs: "1rem", md: "1.5rem" } }}>
+                    {plan.details}
+                  </Typography>
+                </Box>
+                {idx < additionalPlans.length - 1 && <Divider sx={{ bgcolor: "#E37503", height: "2px" }} />}
+              </React.Fragment>
+            ))}
+          </CardContent>
+        </Card>
       </Box>
     </Box>
   );

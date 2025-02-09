@@ -4,10 +4,11 @@ import { styled } from '@mui/system';
 import founder from '../assets/trainer.jpg';
 
 const RoundedImage = styled('img')({
-    width: '200px',
-    height: '250px',  
-    borderRadius: '5%', 
-});
+    width: '205px',
+    height: '250px',
+    borderRadius: '5%',
+    objectFit: 'cover', // Ensure the image covers the area without distortion
+  });
 
 const CoFounder = () => {
     return (
@@ -17,7 +18,11 @@ const CoFounder = () => {
                     sx={{ 
                         color: '#E87F11', 
                         fontWeight: 'bold', 
-                        marginBottom: 2, 
+                        marginBottom: 1,
+                        fontSize: {
+                            xs: '1.75rem',
+                            md: '2rem',
+                        },
                     }}
                 >
                    トレーナー紹介
@@ -52,16 +57,26 @@ const CoFounder = () => {
                   <Typography 
                       variant="h5" 
                       sx={{ 
-                          color: '#E87F11', 
-                          fontWeight: 'bold', 
-                          marginBottom: 1, 
-                      }}
+                        color: '#E87F11', 
+                        fontWeight: 'bold', 
+                        marginBottom: 1,
+                        fontSize: {
+                            xs: '1.75rem',
+                            md: '2rem',
+                        },
+                    }}
                   >
                       君塚龍二
                   </Typography>
                   <Typography 
                       variant="body1" 
-                      sx={{ color: '#E87F11' }}
+                      sx={{  
+                        color: '#E87F11',
+                        fontSize: {
+                            xs: '1rem',
+                            md: '1.25rem',
+                        },
+                    }} 
                   >
                       ベストライフフィットネス代表 / パーソナルトレーナー
                       

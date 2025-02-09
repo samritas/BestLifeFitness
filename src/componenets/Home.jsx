@@ -45,7 +45,20 @@ function Home() {
       >
         <Container>
           <Box sx={{ textAlign: "center" }}>
-            <Typography variant="h5" sx={{ color: "white", mb: 4 }}>
+            <Typography 
+              variant="h5" 
+              sx={{ 
+                color: "white", 
+                mb: 4,
+                fontSize: {
+                  xs: '1rem',  // Font size for mobile (extra small screens)
+                  sm: '1.25rem', // Font size for small screens
+                  md: '1.5rem',  // Font size for medium screens (desktop)
+                  lg: '1.75rem', // Font size for large screens
+                  xl: '2rem'     // Font size for extra large screens
+                }
+              }}
+            >
               <TypeAnimation
                 sequence={["50代、60代、70代からはじめる健康でいるためのパーソナルジム", 1000]}
                 wrapper="span"
@@ -55,23 +68,23 @@ function Home() {
               />
             </Typography>
             <Link  
-                  to='counseling'
-                  smooth={true}
-                  duration={500}
-                  style={{ textDecoration: "none", cursor: "pointer" }}>
-                     <Button
-              sx={{
-                backgroundColor: "#E37503",
-                color: "white",
-                px: 4,
-                py: 1,
-                fontSize: "0.9rem",
-              }}
+              to='counseling'
+              smooth={true}
+              duration={500}
+              style={{ textDecoration: "none", cursor: "pointer" }}
             >
-              無料カウンセリングを予約する
-            </Button>
-                  </Link>
-           
+              <Button
+                sx={{
+                  backgroundColor: "#E37503",
+                  color: "white",
+                  px: 4,
+                  py: 1,
+                  fontSize: { xs: '1rem', md: '1.25rem' }
+                }}
+              >
+                無料カウンセリングを予約する
+              </Button>
+            </Link>
           </Box>
         </Container>
       </Box>

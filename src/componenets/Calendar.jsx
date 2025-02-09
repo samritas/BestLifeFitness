@@ -52,7 +52,14 @@ const Calendar = () => {
       >
         <Typography
           variant="h5"
-          sx={{ textAlign: 'center', mb: 3, color: '#E37503', fontWeight: 'bold' }}
+          sx={{ textAlign: 'center' ,
+            color: '#E37503',
+            fontWeight: 'bold', 
+            marginBottom: 1,
+            fontSize: {
+                xs: '1.75rem',
+                md: '2rem',
+            }, }}
         >
           無料カウンセリング
         </Typography>
@@ -63,11 +70,15 @@ const Calendar = () => {
             width: '100%',
             height: '1000px',
             overflow: 'hidden',
+            
           }}
         ></Box>
         <Typography
           variant="body1"
-          sx={{ textAlign: 'center', mt: 2, color: 'gray' }}
+          sx={{ textAlign: 'center', mt: 2, color: 'gray', fontSize: {
+            xs: '1rem',
+            md: '1.25rem',
+        }, }}
         >
           予約をすることで、
           <Link   onClick={handleRedirect} sx={{ color: '#E37503', textDecoration: 'none' }}>利用規約</Link>および
