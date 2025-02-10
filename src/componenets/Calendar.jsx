@@ -76,8 +76,8 @@ const Calendar = () => {
         <Typography
           variant="body1"
           sx={{ textAlign: 'center', mt: 2, color: 'gray', fontSize: {
-            xs: '1rem',
-            md: '1.25rem',
+            xs: '1.25rem',
+            md: '1.50rem',
         }, }}
         >
           予約をすることで、

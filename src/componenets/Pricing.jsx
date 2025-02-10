@@ -102,31 +102,61 @@ const Pricing = () => {
                 alignItems: "center",
               }}
             >
-              {group.plans.map((plan, idx) => (
+              <Card
+          elevation={6}
+          sx={{
+            width: { xs: "100%", sm: 320 }, // Increased width on small screens
+            height: {lg:315, xs: 360, sm: 360 }, // Adjusted height on small screens
+            borderRadius: 2,
+            background: "#FFF",
+            boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <CardContent sx={{ textAlign: "center" }}>
+            <Typography
+              variant="body1"
+              sx={{ color: "#E37503", fontSize: { xs: "1.25rem", md: "1.50rem" } }}
+            >
+              \ 地域最安値 /
+            </Typography>
+            <Typography
+              variant="body1"
+              sx={{ fontWeight: "bold", color: "#E37503", fontSize: {  xs: "1.25rem", md: "1.50rem"  } }}
+            >
+             ベストライフ40
+            </Typography>
+            <Typography
+              variant="body1"
+              sx={{ fontWeight: "bold", color: "#E37503", fontSize: {  xs: "1.25rem", md: "1.50rem"  } }}
+            >
+          20分ストレッチ
+            </Typography>
+            <Typography
+              variant="body1"
+              sx={{ fontWeight: "bold", color: "#E37503", fontSize: { xs: "1.25rem", md: "1.50rem" } }}
+            >
+          20分運動
+            </Typography>
+          </CardContent>
+        </Card>
                 <Card
-                  key={idx}
-                  elevation={6}
-                  sx={{
-                    width: { xs: "100%", sm: 350 }, // Increased width on small screens
-                    height: { xs: 240, sm: 200 }, // Increased height on small screens
-                    borderRadius: 2,
-                    background: "#FFF",
-                    boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
-                    position: "relative",
-                  }}
-                >
-                  <CardContent
-                    sx={{
-                      display: "flex",
-                      flexDirection: "column",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      flexGrow: 1,
-                      color: "#E37503",
-                      gap: 1,
-                    }}
-                  >
-                    {plan.recommended && (
+                elevation={6}
+                sx={{
+                  width: { xs: "100%", sm: 320 }, // Increased width on small screens
+                  borderRadius: 2,
+                  background: "#FFF",
+                  boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
+                }}
+              >
+                
+                <CardContent sx={{ textAlign: "center", gap: 2 }}>
+                {group.plans.map((plan, idx) => (
+                  
+                    <React.Fragment key={idx}>
+                       {plan.recommended && (
                       <Typography
                         sx={{
                           bgcolor: "#E37503",
@@ -144,44 +174,31 @@ const Pricing = () => {
                         オススメ
                       </Typography>
                     )}
-                    <Typography
-                      variant="body1"
-                      sx={{ fontWeight: "bold", fontSize: { xs: "1rem", md: "1.5rem" } }}
-                    >
-                      {plan.label}
-                    </Typography>
-                    <Typography
-                      variant="h4"
-                      sx={{
-                        fontWeight: "bold",
-                        color: "#E37503",
-                        fontSize: { xs: "1.75rem", md: "2.5rem" },
-                      }}
-                    >
-                      {plan.price}
-                    </Typography>
-                    <Typography
-                      variant="body1"
-                      sx={{  color: "#E37503", fontSize: { xs: "1rem", md: "1.5rem" } }}
-                    >
-                      {plan.details}
-                    </Typography>
-                  </CardContent>
-                </Card>
-              ))}
-              <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
-                {benefits.map((text, idx) => (
-                  <Box key={idx} sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-                    <Box sx={{ width: 12, height: 12, backgroundColor: "#E37503", borderRadius: "2px" }} />
-                    <Typography
-                      variant="body1"
-                      sx={{ fontWeight: "bold", color: "#E37503", fontSize: { xs: "1rem", md: "1.5rem" } }}
-                    >
-                      {text}
-                    </Typography>
-                  </Box>
-                ))}
-              </Box>
+                      <Box sx={{ color: "#E37503" }}>
+                        
+                        <Typography
+                          variant="body1"
+                          sx={{ fontWeight: "bold", fontSize: { xs: "1rem", md: "1.5rem" } }}
+                        >
+                          {plan.label}
+                        </Typography>
+                        <Typography
+                          variant="h4"
+                          sx={{ fontWeight: "bold", color: "#E37503", fontSize: { xs: "1.75rem", md: "2.5rem" } }}
+                        >
+                          {plan.price}
+                        </Typography>
+                        <Typography variant="body1" sx={{ color: "#E37503", fontSize: { xs: "1rem", md: "1.5rem" } }}>
+                          {plan.details}
+                        </Typography>
+                      </Box>
+                      {idx < additionalPlans.length - 1 && <Divider sx={{ bgcolor: "#E37503", height: "2px" }} />}
+                    </React.Fragment>
+                  ))}
+                </CardContent>
+              </Card>
+             
+             
             </Box>
           </Box>
         ))}
@@ -200,7 +217,7 @@ const Pricing = () => {
           elevation={6}
           sx={{
             width: { xs: "100%", sm: 320 }, // Increased width on small screens
-            height: { xs: 360, sm: 360 }, // Adjusted height on small screens
+            height: {lg:315, xs: 360, sm: 360 },
             borderRadius: 2,
             background: "#FFF",
             boxShadow: "0 4px 8px rgba(0,0,0,0.2)",

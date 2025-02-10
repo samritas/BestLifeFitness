@@ -90,7 +90,7 @@ const Philosophy = () => {
                 
                 <Typography
                     variant="body1"
-                    sx={{ color: '#E87F11', lineHeight: 1.6 ,marginTop: 3,fontSize: {
+                    sx={{ color: '#E87F11', lineHeight: 1.6 ,marginTop: 1,fontSize: {
                         xs: '1rem',
                         md: '1.25rem',
                       },}}

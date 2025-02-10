@@ -75,8 +75,8 @@ const Access = () => {
             sx={{
               color: '#E87F11',
               fontSize: {
-                xs: '1rem',
-                md: '1.25rem',
+                xs: '1.25rem',
+                md: '1.50rem',
               },
             }}
           >
@@ -104,8 +104,8 @@ const Access = () => {
             sx={{
               color: '#E87F11',
               fontSize: {
-                xs: '1rem',
-                md: '1.25rem',
+                xs: '1.25rem',
+                md: '1.50rem',
               },
             }}
           >
@@ -135,8 +135,8 @@ const Access = () => {
             sx={{
               color: '#E87F11',
               fontSize: {
-                xs: '1rem',
-                md: '1.25rem',
+                xs: '1.25rem',
+                md: '1.50rem',
               },
               textDecoration: 'underline',
             }}

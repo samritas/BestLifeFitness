@@ -16,7 +16,7 @@ export default function Founder() {
 
   return (
     <Box sx={{ padding: 5, flexDirection: 'column', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-      <Typography variant="h6" sx={{ mb: 2, color: '#E87F11', textAlign: 'center', fontSize: { xs: '1.75rem', md: '2rem' } }}>
+      <Typography variant="h6"  sx={{ mb: 2, color: '#E87F11', textAlign: 'left', fontSize: { xs: '1.75rem', md: '2rem' } }}>
         <strong>創業者紹介</strong>
       </Typography>
 
@@ -24,16 +24,17 @@ export default function Founder() {
         <RoundedImage src={founder} alt="Co-founder" />
       </Box>
 
-      <Typography variant="body1" sx={{ mt: 4, color: '#E87F11', fontSize: { xs: '1rem', md: '1.25rem' } }}>
+      <Typography variant="body1" sx={{ mt: 3, color: '#E87F11', textAlign: 'left',fontSize: { xs: '1rem', md: '1.25rem' } }}>
         <strong>君塚 龍二（きみづか りゅうじ）</strong>
         <br />
         ベストライフフィットネス代表 / パーソナルトレーナー
         <br />
-        <strong>プロフィール</strong>
+        
+        <br /><strong>プロフィール</strong>
         <br />
         スポーツ・フィットネス分野を専門的に学んだ後、大手フィットネスクラブ「ゴールドジム」を運営するTHINKフィットネス株式会社に入社。7年以上にわたり、幅広い年齢層のお客様に運動指導を行ってきました。
-        <br />
-        <strong>指導実績</strong>
+        
+        <br /><strong>指導実績</strong>
         <br />
          • 最高90歳近くの女性への運動指導
         <br />
@@ -49,11 +50,7 @@ export default function Founder() {
       </Typography>
 
       <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <Typography variant="body1" sx={{ mt: 2, color: '#E87F11' }}>
-          <strong>指導実績</strong>
-        </Typography>
-
-        <Typography variant="body1" sx={{ mt: 3, color: '#E87F11', fontSize: { xs: '1rem', md: '1.25rem' } }}>
+        <br /><Typography variant="body1" sx={{ mt: 3, color: '#E87F11', fontSize: { xs: '1rem', md: '1.25rem' } }}>
           <strong>フィットネスに対する想い</strong>
         </Typography>
         <Typography variant="body1" sx={{ mt: 1, color: '#E87F11', fontSize: { xs: '1rem', md: '1.25rem' } }}>
@@ -79,7 +76,7 @@ export default function Founder() {
           そこで私は、「もっと多くの人に正しいフィットネスを届けたい」という想いから、運動習慣がない方や中高齢者が安心して通えるパーソナルジム「ベストライフフィットネス」を立ち上げました。
         </Typography>
 
-        <Typography variant="body1" sx={{ mt: 3, color: '#E87F11', fontSize: { xs: '1rem', md: '1.25rem' } }}>
+        <br /><Typography variant="body1" sx={{ mt: 3, color: '#E87F11', fontSize: { xs: '1rem', md: '1.25rem' } }}>
           <strong>メッセージ</strong>
         </Typography>
         <Typography variant="body1" sx={{ mt: 1, color: '#E87F11', fontSize: { xs: '1rem', md: '1.25rem' } }}>
