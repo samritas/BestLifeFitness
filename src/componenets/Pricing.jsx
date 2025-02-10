@@ -152,14 +152,15 @@ const Pricing = () => {
                 }}
               >
                 
-                <CardContent sx={{ textAlign: "center", gap: 2 }}>
+                <CardContent >
                 {group.plans.map((plan, idx) => (
                   
                     <React.Fragment key={idx}>
                        {plan.recommended && (
-                      <Typography
+                        <Box sx={{ color: "#E37503" ,  bgcolor: "#E37503",textAlign: "center", gap: 2,fontSize: { xs: "1rem", md: "1.5rem" } }}>
+                            <Typography
                         sx={{
-                          bgcolor: "#E37503",
+                         
                           color: "white",
                           width: "100%",
                           textAlign: "center",
@@ -168,13 +169,16 @@ const Pricing = () => {
                           borderRadius: "4px 4px 0 0",
                           mb: 1,
                           fontSize: { xs: "0.75rem", md: "1rem" },
+                          textAlign: "center",
                         }}
                         variant="caption"
                       >
                         オススメ
                       </Typography>
+                        </Box>
+                    
                     )}
-                      <Box sx={{ color: "#E37503" }}>
+                      <Box sx={{ color: "#E37503" , textAlign: "center", gap: 2 }}>
                         
                         <Typography
                           variant="body1"
