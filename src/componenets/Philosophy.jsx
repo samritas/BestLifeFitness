@@ -6,7 +6,7 @@ import service from '../assets/philosophy.jpg'
 const RoundedImage = styled('img')({
     width: '350px', 
     maxWidth: '350px',
-    height: '290px', 
+    height: '270px', 
     borderRadius: '5%', 
 });
 
