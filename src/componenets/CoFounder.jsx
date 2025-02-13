@@ -13,13 +13,35 @@ const RoundedImage = styled('img')({
 const CoFounder = () => {
     return (
         <Box sx={{ padding: 8 }}>
-            <Typography variant="h5" sx={{ color: '#E87F11', fontWeight: 'bold', marginBottom: 1, fontSize: { xs: '1.75rem', md: '2rem' } }}>トレーナー紹介</Typography>
+            <Typography 
+                variant="h5" 
+                sx={{ 
+                    color: '#E87F11', 
+                    fontWeight: 'bold', 
+                    marginBottom: 1, 
+                    fontSize: { xs: '1.75rem', md: '2rem' },
+                    textAlign: { xs: 'center', md: 'left' } 
+                }}
+            >
+                トレーナー紹介
+            </Typography>
             <Box sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' }, gap: 4, justifyContent: 'center', alignItems: 'center' }}>
                 <Box>
                     <RoundedImage src={founder} alt="Co-founder" />
                 </Box>
                 <Box flex={1} display="flex" flexDirection="column" justifyContent="center" alignItems="flex-start" padding={2}>
-                    <Typography variant="h5" sx={{ color: '#E87F11', fontWeight: 'bold', marginBottom: 1, fontSize: { xs: '1.75rem', md: '2rem' } }}>君塚龍二</Typography>
+                    <Typography 
+                        variant="h5" 
+                        sx={{ 
+                            color: '#E87F11', 
+                            fontWeight: 'bold', 
+                            marginBottom: 1, 
+                            fontSize: { xs: '1.75rem', md: '2rem' },
+                            textAlign: { xs: 'center', md: 'left' } 
+                        }}
+                    >
+                        君塚龍二
+                    </Typography>
                     <Typography variant="body1" sx={{ color: '#E87F11', fontSize: { xs: '1.25rem', md: '1.50rem' } }}>
                         ベストライフフィットネス代表 / パーソナルトレーナー
                         スポーツ分野を専門的に学び、ゴールドジムを運営するTHINKフィットネスで7年以上の指導経験を持つ。90歳近い高齢者からアスリートまで幅広い層に対応可能。
