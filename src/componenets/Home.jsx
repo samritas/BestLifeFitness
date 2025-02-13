@@ -55,7 +55,7 @@ function Home() {
             >
               <TypeAnimation
                 sequence={[
-                  "50代、60代、70代からはじめる健康でいるた\nめのパーソナルジム",
+                  "50代、60代、70代からはじめる\n健康でいるためのパーソナルジム",
                   1000,
                 ]}
                 wrapper="span"

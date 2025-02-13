@@ -17,7 +17,7 @@ const Access = () => {
   <Box sx={{ mb: 4 }}>
     <iframe
       title="Google Map 1"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.216917650716!2d139.9254209!3d35.7208834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018879890d4ffc7%3A0x4ebe5f78667334b3!2z44Kw44Oq44O844Oz44K_44O844OV5Y2X5YWr5bmh!5e0!3m2!1sen!2set!4v1739430361325!5m2!1sen!2set"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.219027684013!2d139.9254155!3d35.720831499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601887e522375805%3A0xf2f58e20c6895a58!2z44OZ44K544OI44Op44Kk44OV44OV44Kj44OD44OI44ON44K55pys5YWr5bmh!5e0!3m2!1sen!2set!4v1739464511175!5m2!1sen!2set"
       width="100%"
       height="300"
       style={{ border: 0, borderRadius: "8px" }}
@@ -29,7 +29,7 @@ const Access = () => {
   <Box sx={{ mb: 4 }}>
     <iframe
       title="Google Map 2"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.219027684013!2d139.9254155!3d35.720831499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601887e522375805%3A0xf2f58e20c6895a58!2z44OZ44K544OI44Op44Kk44OV44OV44Kj44OD44OI44ON44K55pys5YWr5bmh!5e0!3m2!1sen!2set!4v1739430177538!5m2!1sen!2set"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.222666367173!2d139.925633!3d35.720742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601886da90dfbb67%3A0x3a70028e6f4858c3!2z44K_44Kk44Og44K65Y2X5YWr5bmh!5e0!3m2!1sen!2set!4v1739464639430!5m2!1sen!2set"
       width="100%"
       height="300"
       style={{ border: 0, borderRadius: "8px" }}
