@@ -113,6 +113,7 @@ const Pricing = () => {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
+            border: "1px solid  #F2A45C"
           }}
         >
           <CardContent sx={{ textAlign: "center" }}>
@@ -142,7 +143,7 @@ const Pricing = () => {
             </Typography>
           </CardContent>
         </Card>
-        <Card sx={{ maxWidth: 300, borderRadius: 2, overflow: "hidden",  width: { xs: "100%", sm: 320 }, height: {lg:308, xs: 210, sm: 308 }}}>
+        <Card sx={{ maxWidth: 300, borderRadius: 2,  border: "1px solid  #F2A45C", overflow: "hidden",  width: { xs: "100%", sm: 320 }, height: {lg:308, xs: 210, sm: 308 }}}>
       <Box
         sx={{
           backgroundColor: "orange",
