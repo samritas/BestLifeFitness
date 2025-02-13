@@ -35,9 +35,10 @@ export default function Founder() {
         <br /><strong>プロフィール</strong>
         <br />
         スポーツ・フィットネス分野を専門的に学んだ後、大手フィットネスクラブ「ゴールドジム」を運営するTHINKフィットネス株式会社に入社。7年以上にわたり、幅広い年齢層のお客様に運動指導を行ってきました。
-        
-        <br /><strong>指導実績</strong>
-        <br />
+        <Typography variant="body1" sx={{ mt: 3, color: '#E87F11', fontSize: { xs: '1rem', md: '1.25rem' } }}>
+        <strong>指導実績</strong>
+        </Typography>
+       
          • 最高90歳近くの女性への運動指導
         <br />
          • 入院明けのリハビリテーションサポート

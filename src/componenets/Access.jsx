@@ -14,42 +14,30 @@ const Access = () => {
       }}
     >
       <Box sx={{ flex: 1, p: 2, width: "100%" }}>
-        <Box sx={{ mb: 4 }}>
-          <iframe
-            title="Google Map 2"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.1748881086936!2d139.92344451516215!3d35.72074208019262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601886da90dfbb67%3A0x3a70028e6f4858c3!2z44Kw44Oq44O844Oz44K_44O844OV5Y2X5YWr5bmh!5e0!3m2!1sen!2sau!4v1617624632536!5m2!1sen!2sau"
-            width="100%"
-            height="300"
-            style={{ border: 0, borderRadius: "8px" }}
-            allowFullScreen=""
-            loading="lazy"
-          ></iframe>
-        </Box>
+  <Box sx={{ mb: 4 }}>
+    <iframe
+      title="Google Map 1"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.216917650716!2d139.9254209!3d35.7208834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018879890d4ffc7%3A0x4ebe5f78667334b3!2z44Kw44Oq44O844Oz44K_44O844OV5Y2X5YWr5bmh!5e0!3m2!1sen!2set!4v1739430361325!5m2!1sen!2set"
+      width="100%"
+      height="300"
+      style={{ border: 0, borderRadius: "8px" }}
+      allowFullScreen=""
+      loading="lazy"
+    ></iframe>
+  </Box>
 
-        <Box sx={{ mb: 4 }}>
-          <iframe
-            title="Google Map 2"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.1860033169985!2d139.92833801516153!3d35.70036158019239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601886da90dfbb67%3A0x3a70028e6f4858c3!2z5p2x5Lqs5ZOB44Kq44Kk44Oz44Kw44Oq44O844Oz44K_44O844OV5Y2X5YWr5bmh!5e0!3m2!1sen!2sjp!4v1700000000000!5m2!1sen!2sjp"
-            width="100%"
-            height="300"
-            style={{ border: 0, borderRadius: "8px" }}
-            allowFullScreen=""
-            loading="lazy"
-          ></iframe>
-        </Box>
-
-        <Box>
-          <iframe
-            title="Google Map 2"
-            src=""
-            width="100%"
-            height="300"
-            style={{ border: 0, borderRadius: "8px" }}
-            allowFullScreen=""
-            loading="lazy"
-          ></iframe>
-        </Box>
-      </Box>
+  <Box sx={{ mb: 4 }}>
+    <iframe
+      title="Google Map 2"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.219027684013!2d139.9254155!3d35.720831499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601887e522375805%3A0xf2f58e20c6895a58!2z44OZ44K544OI44Op44Kk44OV44OV44Kj44OD44OI44ON44K55pys5YWr5bmh!5e0!3m2!1sen!2set!4v1739430177538!5m2!1sen!2set"
+      width="100%"
+      height="300"
+      style={{ border: 0, borderRadius: "8px" }}
+      allowFullScreen=""
+      loading="lazy"
+    ></iframe>
+  </Box>
+</Box>
 
       <Box
         sx={{ flex: 1, display: "flex", flexDirection: "column", gap: 4, p: 2 }}

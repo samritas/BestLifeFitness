@@ -7,14 +7,14 @@ const Pricing = () => {
       title: "ベストライフ40",
       plans: [
         {
-          label: "￥ 3000円お得 /",
+          label: "\ 3,000円お得 /10回券",
           price: "￥40,000",
-          details: "税込・10回分",
+          details: "税込・初期費用なし",
           recommended: true,
         },
         {
-          label: "￥ 地域最安値 /",
-          price: "￥4,300",
+          label: "都度払い",
+          price: "￥4,300 / 回",
           details: "税込・都度払い",
         },
       ],
@@ -106,7 +106,7 @@ const Pricing = () => {
           elevation={6}
           sx={{
             width: { xs: "100%", sm: 320 }, // Increased width on small screens
-            height: {lg:315, xs: 360, sm: 360 }, // Adjusted height on small screens
+            height: {lg:308, xs: 210, sm: 308 }, // Adjusted height on small screens
             borderRadius: 2,
             background: "#FFF",
             boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
@@ -118,66 +118,48 @@ const Pricing = () => {
           <CardContent sx={{ textAlign: "center" }}>
             <Typography
               variant="body1"
-              sx={{ color: "#E37503", fontSize: { xs: "1.25rem", md: "1.50rem" } }}
+              sx={{ color: "#E37503", fontSize: { xs: "1.25rem", md: "1.70rem" } }}
             >
               \ 地域最安値 /
             </Typography>
             <Typography
               variant="body1"
-              sx={{ fontWeight: "bold", color: "#E37503", fontSize: {  xs: "1.25rem", md: "1.50rem"  } }}
+              sx={{ fontWeight: "bold", color: "#E37503", fontSize: {  xs: "1.25rem", md: "1.70rem"  } }}
             >
              ベストライフ40
             </Typography>
             <Typography
               variant="body1"
-              sx={{ fontWeight: "bold", color: "#E37503", fontSize: {  xs: "1.25rem", md: "1.50rem"  } }}
+              sx={{ fontWeight: "bold", color: "#E37503", fontSize: {  xs: "1.25rem", md: "1.70rem"  } }}
             >
           20分ストレッチ
             </Typography>
             <Typography
               variant="body1"
-              sx={{ fontWeight: "bold", color: "#E37503", fontSize: { xs: "1.25rem", md: "1.50rem" } }}
+              sx={{ fontWeight: "bold", color: "#E37503", fontSize: { xs: "1.25rem", md: "1.70rem" } }}
             >
           20分運動
             </Typography>
           </CardContent>
         </Card>
-                <Card
-                elevation={6}
-                sx={{
-                  width: { xs: "100%", sm: 320 }, // Increased width on small screens
-                  borderRadius: 2,
-                  background: "#FFF",
-                  boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
-                }}
-              >
-                
+        <Card sx={{ maxWidth: 300, borderRadius: 2, overflow: "hidden",  width: { xs: "100%", sm: 320 }, height: {lg:308, xs: 210, sm: 308 }}}>
+      <Box
+        sx={{
+          backgroundColor: "orange",
+          color: "white",
+          textAlign: "center",
+          p: 1,
+        }}
+      >
+        <Typography variant="subtitle1" fontWeight="bold">
+          オススメ
+        </Typography>
+      </Box>
                 <CardContent >
                 {group.plans.map((plan, idx) => (
                   
-                    <React.Fragment key={idx}>
-                       {plan.recommended && (
-                        <Box sx={{ color: "#E37503" ,  bgcolor: "#E37503",textAlign: "center", gap: 2,fontSize: { xs: "1rem", md: "1.5rem" } }}>
-                            <Typography
-                        sx={{
-                         
-                          color: "white",
-                          width: "100%",
-                          textAlign: "center",
-                          py: 0.5,
-                          fontWeight: "bold",
-                          borderRadius: "4px 4px 0 0",
-                          mb: 1,
-                          fontSize: { xs: "0.75rem", md: "1rem" },
-                          textAlign: "center",
-                        }}
-                        variant="caption"
-                      >
-                        オススメ
-                      </Typography>
-                        </Box>
-                    
-                    )}
+                    <Box key={idx}>
+                      
                       <Box sx={{ color: "#E37503" , textAlign: "center", gap: 2 }}>
                         
                         <Typography
@@ -192,12 +174,12 @@ const Pricing = () => {
                         >
                           {plan.price}
                         </Typography>
-                        <Typography variant="body1" sx={{ color: "#E37503", fontSize: { xs: "1rem", md: "1.5rem" } }}>
+                        <Typography variant="body1" sx={{ color: "#F2A45C", fontSize: { xs: "1rem", md: "1.25rem" } }}>
                           {plan.details}
                         </Typography>
                       </Box>
-                      {idx < additionalPlans.length - 1 && <Divider sx={{ bgcolor: "#E37503", height: "2px" }} />}
-                    </React.Fragment>
+                      {idx < additionalPlans.length - 1 && <Divider sx={{ bgcolor: "#F2A45C", height: "2px" }} />}
+                    </Box>
                   ))}
                 </CardContent>
               </Card>

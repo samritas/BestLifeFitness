@@ -49,24 +49,22 @@ function Home() {
                   lg: "1.75rem",
                   xl: "2rem",
                 },
-                overflow: "hidden",
-                textOverflow: "ellipsis",
-                display: "-webkit-box",
-                WebkitLineClamp: 2,
-                WebkitBoxOrient: "vertical",
+                textAlign: "center", // Ensures center alignment
+                whiteSpace: "pre-line", // Allows line breaks to work properly
               }}
             >
               <TypeAnimation
                 sequence={[
-                  "50代、60代、70代からはじめる健康でいるためのパーソナルジム",
+                  "50代、60代、70代からはじめる健康でいるた\nめのパーソナルジム",
                   1000,
                 ]}
                 wrapper="span"
                 speed={50}
-                style={{ fontFamily: "monospace" }}
+                style={{ fontFamily: "monospace", display: "block" }}
                 repeat={0}
               />
             </Typography>
+
             <Link
               to="counseling"
               smooth={true}
