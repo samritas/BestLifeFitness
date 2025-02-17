@@ -3,19 +3,20 @@ import { Box, Typography, Card, CardContent, CardMedia } from '@mui/material';
 import Recommended1 from '../assets/Recommended1.png';
 import Recommended2 from '../assets/Recommended2.png';
 import Recommended3 from '../assets/Recommended3.png';
+import strings from '../localization/strings'; 
 
 function Recommended() {
   return (
     <Box sx={{ padding: 7, display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
       <Box sx={{ textAlign: 'center' }}>
         <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 4, color: '#E37503', fontSize: { xs: '1.5rem', md: '2rem' } }}>
-          こんな方におすすめ
+          {strings.recommended_title}
         </Typography>
         <Box sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' }, gap: 4, justifyContent: 'center', alignItems: 'center' }}>
-          {[
-            { image: Recommended1, title: '運動習慣がない方' },
-            { image: Recommended2, title: 'パーソナルジムは辛いトレーニングと食事制限がありそうで嫌だ' },
-            { image: Recommended3, title: 'ジム通うのにハードルを感じる方' },
+          {[ 
+            { image: Recommended1, title: strings.recommended_1 },
+            { image: Recommended2, title: strings.recommended_2 },
+            { image: Recommended3, title: strings.recommended_3 },
           ].map((service, index) => (
             <Card key={index} sx={{ maxWidth: 600, borderRadius: 4, boxShadow: 3, transition: 'box-shadow 0.3s', '&:hover': { boxShadow: 6 } }}>
               <Box sx={{ position: 'relative' }}>

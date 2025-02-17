@@ -14,16 +14,17 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import logo from "../assets/logo.png";
 import { Link } from "react-scroll";
+import strings from "../localization/strings";
 
 const navItems = [
-  { label: "ホーム", id: "home" },
-  { label: "こんな方におすすめ", id: "about" },
-  { label: "サービスの特徴", id: "services" },
-  { label: "料金", id: "pricing" },
-  { label: "トレーナー", id: "trainer" },
-  { label: "無料カウンセリング", id: "counseling" },
-  { label: "企業理念", id: "philosophy" },
-  { label: "創業者紹介", id: "founder" },
+  { label: strings.home, id: "home" },
+  { label: strings.about, id: "about" },
+  { label: strings.services, id: "services" },
+  { label: strings.pricing, id: "pricing" },
+  { label: strings.trainer, id: "trainer" },
+  { label: strings.counseling, id: "counseling" },
+  { label: strings.philosophy, id: "philosophy" },
+  { label: strings.founder, id: "founder" },
 ];
 
 function Navbar() {
@@ -54,16 +55,19 @@ function Navbar() {
         }}
       >
         <Container>
-          <Toolbar sx={{ justifyContent: "space-between", alignItems: "center" }}>
-            {/* Logo */}
-            <img src={logo} alt="Logo" style={{ height: "50px", width: "auto" }} />
-
-            {/* Desktop Navigation */}
+          <Toolbar
+            sx={{ justifyContent: "space-between", alignItems: "center" }}
+          >
+            <img
+              src={logo}
+              alt="Logo"
+              style={{ height: "50px", width: "auto" }}
+            />
             <Box
               sx={{
                 display: { xs: "none", md: "flex" },
                 gap: 2,
-                fontSize: { xs: '1rem', md: '1.25rem' }
+                fontSize: { xs: "1rem", md: "1.25rem" },
               }}
             >
               {navItems.map((item) => (
@@ -72,8 +76,7 @@ function Navbar() {
                   to={item.id}
                   smooth={true}
                   duration={500}
-                  style={{ textDecoration: "none", cursor: "pointer", }}
-                  
+                  style={{ textDecoration: "none", cursor: "pointer" }}
                 >
                   <Button
                     sx={{
@@ -89,8 +92,6 @@ function Navbar() {
                 </Link>
               ))}
             </Box>
-
-            {/* Mobile Menu Button */}
             <IconButton
               color="inherit"
               aria-label="menu"
@@ -102,8 +103,6 @@ function Navbar() {
           </Toolbar>
         </Container>
       </AppBar>
-
-      {/* Mobile Drawer */}
       <Drawer
         anchor="right"
         open={isMenuOpen}

@@ -4,7 +4,7 @@ import banner from "../assets/banner.png";
 import { TypeAnimation } from "react-type-animation";
 import Navbar from "./Navbar";
 import { Link } from "react-scroll";
-
+import strings from "../localization/strings"; 
 function Home() {
   return (
     <Box
@@ -49,13 +49,13 @@ function Home() {
                   lg: "1.75rem",
                   xl: "2rem",
                 },
-                textAlign: "center", // Ensures center alignment
-                whiteSpace: "pre-line", // Allows line breaks to work properly
+                textAlign: "center",
+                whiteSpace: "pre-line",
               }}
             >
               <TypeAnimation
                 sequence={[
-                  "50代、60代、70代からはじめる\n健康でいるためのパーソナルジム",
+                  strings.home_banner_text,
                   1000,
                 ]}
                 wrapper="span"
@@ -80,7 +80,7 @@ function Home() {
                   fontSize: { xs: "1rem", md: "1.25rem" },
                 }}
               >
-                無料カウンセリングを予約する
+                {strings.book_counseling}
               </Button>
             </Link>
           </Box>
