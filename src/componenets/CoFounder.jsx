@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Typography } from '@mui/material';
 import { styled } from '@mui/system';
 import founder from '../assets/trainer.jpg';
+import strings from '../localization/strings';
 
 const RoundedImage = styled('img')({
     width: '205px',
@@ -23,7 +24,7 @@ const CoFounder = () => {
                     textAlign: { xs: 'center', md: 'left' } 
                 }}
             >
-                トレーナー紹介
+            {strings. Trainer_title}
             </Typography>
             <Box sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' }, gap: 4, justifyContent: 'center', alignItems: 'center' }}>
                 <Box>
@@ -40,12 +41,10 @@ const CoFounder = () => {
                             textAlign: { xs: 'center', md: 'left' } 
                         }}
                     >
-                        君塚龍二
+                        {strings.Trainer_name}
                     </Typography>
                     <Typography variant="body1" sx={{ color: '#E87F11', fontSize: { xs: '1.25rem', md: '1.50rem' } }}>
-                        ベストライフフィットネス代表 / パーソナルトレーナー
-                        スポーツ分野を専門的に学び、ゴールドジムを運営するTHINKフィットネスで7年以上の指導経験を持つ。90歳近い高齢者からアスリートまで幅広い層に対応可能。
-                        幼少期の困難な経験を経て、多くの人に健康を届けたいという思いでベストライフフィットネスを創設。講演やセミナーを通じて、健康促進と公平な社会を目指した活動も展開している。
+                    {strings.Trainer_description}
                     </Typography>
                 </Box>
             </Box>
