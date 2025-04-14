@@ -1,68 +1,8 @@
 import React from "react";
 import { Box, Typography, Card, CardContent, Divider, Grid } from "@mui/material";
+import { plans } from "../data/price";
 
 const Pricing = () => {
-  const plans = [
-    {
-      title: "ベストライフ40",
-      subtitle: "すべて 5,300円（税別）",
-      items: [
-        {
-          name: "運動20分 + ストレッチ20分",
-          description: "運動習慣をつけたい方におすすめ",
-          price: "¥5,300",
-        },
-        {
-          name: "ストレッチ40分",
-          description: "肩こり・腰痛にお悩みの方におすすめ",
-          price: "¥5,300",
-        },
-        {
-          name: "運動40分",
-          description: "筋肉をつけたい方、ダイエットしたい方におすすめ",
-          price: "¥5,300",
-        },
-      ],
-    },
-    {
-      title: "マットピラティス",
-      subtitle: "5,300円（税別）",
-      items: [
-        {
-          description: "対象:",
-          details: [
-            "体幹に自信のない方",
-            "姿勢が気になる方",
-            "ストレートネックが気になる方",
-            "肩こり・腰痛にお悩みの方"
-          ]
-        }
-      ],
-    },
-    {
-      title: "加圧トレーニング",
-      items: [
-        {
-          name: "加圧のみ",
-          price: "5,000円（税別）",
-          trial: "初回体験：500円",
-        },
-        {
-          name: "加圧 + ストレッチ",
-          price: "8,000円（税別）",
-        },
-        {
-          description: "対象:",
-          details: [
-            "忙しい方",
-            "運動不足が気になる方",
-            "ダイエットしたい方"
-          ]
-        }
-      ],
-    },
-  ];
-
   return (
     <Box
       sx={{
@@ -82,7 +22,7 @@ const Pricing = () => {
           color: "#E37503",
           textAlign: "center",
           mb: 0,
-          fontSize: { xs: "1.5rem", md: "2.5rem" },
+          fontSize: { xs: "1.75rem", md: "2rem" },
         }}
       >
         料金プラン
@@ -105,7 +45,7 @@ const Pricing = () => {
           variant="h6"
           sx={{
             fontWeight: "bold",
-            fontSize: { xs: "1.2rem", md: "1.5rem" },
+            fontSize: { xs: "1.25rem", md: "1.5rem" },
             color: "#E37503",
             lineHeight: 1.8,
           }}
@@ -138,53 +78,87 @@ const Pricing = () => {
                   px: 1,
                 }}
               >
-                <Typography variant="h5" fontWeight="bold">
+                <Typography
+                  variant="h5"
+                  fontWeight="bold"
+                  sx={{ fontSize: { xs: "1.25rem", md: "1.5rem" }, color: "white" }}
+                >
                   {plan.title}
                 </Typography>
                 {plan.subtitle && (
-                  <Typography variant="subtitle1">
+                  <Typography
+                    variant="subtitle1"
+                    sx={{ fontSize: { xs: "1.25rem", md: "1.5rem" }, color: "white" }}
+                  >
                     {plan.subtitle}
                   </Typography>
                 )}
               </Box>
-              
+
               <CardContent sx={{ flexGrow: 1 }}>
                 {plan.items.map((item, itemIndex) => (
                   <Box key={itemIndex} sx={{ mb: 3 }}>
                     {item.name && (
-                      <Typography variant="h6" fontWeight="bold" color="#E37503">
+                      <Typography
+                        variant="h6"
+                        fontWeight="bold"
+                        sx={{ color: "#E37503", fontSize: { xs: "1.25rem", md: "1.5rem" } }}
+                      >
                         {item.name}
                       </Typography>
                     )}
-                    
+
                     {item.price && (
-                      <Typography variant="h5" fontWeight="bold" color="#E37503" sx={{ mt: 1 }}>
+                      <Typography
+                        variant="h5"
+                        fontWeight="bold"
+                        sx={{ mt: 1, color: "#E37503", fontSize: { xs: "1.25rem", md: "1.5rem" } }}
+                      >
                         {item.price}
                       </Typography>
                     )}
-                    
+
                     {item.trial && (
-                      <Typography variant="body2" color="#E37503" sx={{ fontStyle: 'italic' }}>
+                      <Typography
+                        variant="body2"
+                        sx={{
+                          fontStyle: "italic",
+                          color: "#E37503",
+                          fontSize: { xs: "1.25rem", md: "1.5rem" },
+                        }}
+                      >
                         {item.trial}
                       </Typography>
                     )}
-                    
+
                     {item.description && (
-                      <Typography variant="body1" sx={{ mt: 1 }}>
+                      <Typography
+                        variant="body1"
+                        sx={{
+                          mt: 1,
+                          color: "#E37503",
+                          fontSize: { xs: "1.25rem", md: "1.5rem" },
+                        }}
+                      >
                         {item.description}
                       </Typography>
                     )}
-                    
+
                     {item.details && (
                       <Box component="ul" sx={{ pl: 2, mt: 1 }}>
                         {item.details.map((detail, detailIndex) => (
-                          <Typography component="li" variant="body2" key={detailIndex}>
+                          <Typography
+                            component="li"
+                            variant="body2"
+                            key={detailIndex}
+                            sx={{ color: "#E37503", fontSize: { xs: "1.25rem", md: "1.5rem" } }}
+                          >
                             {detail}
                           </Typography>
                         ))}
                       </Box>
                     )}
-                    
+
                     {itemIndex < plan.items.length - 1 && (
                       <Divider sx={{ bgcolor: "#F2A45C", my: 2 }} />
                     )}
