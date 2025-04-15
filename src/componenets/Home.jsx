@@ -21,7 +21,7 @@ function Home() {
         sx={{
           position: "absolute",
           inset: 0,
-          backgroundColor: "rgba(0, 0, 0, 0.5)",
+          backgroundColor: "rgba(87, 87, 87, 0.5)",
         }}
       />
       <Navbar />
