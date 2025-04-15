@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/BestLifeFitness/static/css/main.91589023.css",
-    "main.js": "/BestLifeFitness/static/js/main.7355362f.js",
+    "main.js": "/BestLifeFitness/static/js/main.21afba72.js",
     "static/media/Recommended3.png": "/BestLifeFitness/static/media/Recommended3.5d893075b89d6f17ef6c.png",
     "static/media/Recommended1.png": "/BestLifeFitness/static/media/Recommended1.015082c21d7995fe8454.png",
     "static/media/Recommended2.png": "/BestLifeFitness/static/media/Recommended2.ce6a2314faa209a0d1df.png",
@@ -11,10 +11,10 @@
     "static/media/founder.jpg": "/BestLifeFitness/static/media/founder.ce86c4642b53a9afff23.jpg",
     "index.html": "/BestLifeFitness/index.html",
     "main.91589023.css.map": "/BestLifeFitness/static/css/main.91589023.css.map",
-    "main.7355362f.js.map": "/BestLifeFitness/static/js/main.7355362f.js.map"
+    "main.21afba72.js.map": "/BestLifeFitness/static/js/main.21afba72.js.map"
   },
   "entrypoints": [
     "static/css/main.91589023.css",
-    "static/js/main.7355362f.js"
+    "static/js/main.21afba72.js"
   ]
 }
