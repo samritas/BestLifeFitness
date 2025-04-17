@@ -21,7 +21,6 @@ function Home() {
         sx={{
           position: "absolute",
           inset: 0,
-          backgroundColor: "rgba(87, 87, 87, 0.5)",
         }}
       />
       <Navbar />
@@ -73,8 +72,8 @@ function Home() {
             >
               <Button
                 sx={{
-                  backgroundColor: "#E37503",
-                  color: "white",
+                  backgroundColor: "white",
+                  color: "#E37503",
                   px: 4,
                   py: 1,
                   fontSize: { xs: "1rem", md: "1.25rem" },
