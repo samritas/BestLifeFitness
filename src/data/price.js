@@ -1,7 +1,7 @@
 export const plans = [
   {
     title: "ベストライフ40",
-    subtitle: "すべて 5,300円（税別）",
+    subtitle: "すべて 5,300円（税込）",
     items: [
       {
         name: "運動20分 + ストレッチ20分",
@@ -22,7 +22,7 @@ export const plans = [
   },
   {
     title: "マットピラティス",
-    subtitle: "5,300円（税別）",
+    subtitle: "5,300円（税込）",
     items: [
       {
         description: "対象:",
@@ -40,12 +40,12 @@ export const plans = [
     items: [
       {
         name: "加圧のみ",
-        price: "5,000円（税別）",
-        trial: "初回体験：500円",
+        price: "5,500円（税込）",
+        trial: "初回体験：500円（税込）",
       },
       {
         name: "加圧 + ストレッチ",
-        price: "8,000円（税別）",
+        price: "8,800円（税込）",
       },
       {
         description: "対象:",
